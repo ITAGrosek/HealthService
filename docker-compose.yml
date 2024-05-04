@@ -1,0 +1,13 @@
+version: '3.8'
+services:
+  health-check-service:
+    build: .
+    image: martingrosek/health-check-service:latest  # Zamenjajte z vašim Docker Hub uporabniškim imenom
+    ports:
+      - "4000:4000"
+    networks:
+      - backend-network
+
+networks:
+  backend-network:
+    external: true
