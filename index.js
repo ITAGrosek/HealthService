@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const axios = require('axios');
 
-const PORT = 4000;
+const PORT = 4005;
 
 app.get('/', (req, res) => {
     res.send('Health Check Service is running!');

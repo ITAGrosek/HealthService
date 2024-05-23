@@ -4,7 +4,7 @@ services:
     build: .
     image: martingrosek/health-check-service:latest  # Zamenjajte z vašim Docker Hub uporabniškim imenom
     ports:
-      - "4000:4000"
+      - "4005:4005"
     networks:
       - backend-network
 
